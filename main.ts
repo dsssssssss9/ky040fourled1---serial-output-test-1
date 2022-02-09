@@ -72,6 +72,10 @@ led.enable(false)
 KY040.setKY040(DigitalPin.P15, DigitalPin.P1)
 Xcord = 0
 basic.showIcon(IconNames.No)
+pins.digitalWritePin(DigitalPin.P2, 0)
+pins.digitalWritePin(DigitalPin.P3, 0)
+pins.digitalWritePin(DigitalPin.P4, 0)
+pins.digitalWritePin(DigitalPin.P5, 0)
 basic.forever(function () {
 	
 })
