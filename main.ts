@@ -1,5 +1,6 @@
 KY040.OnPinPressed(DigitalPin.P0, function () {
     Xcord = 0
+    serial.writeValue("Xcord", Xcord)
     pins.digitalWritePin(DigitalPin.P2, 0)
     pins.digitalWritePin(DigitalPin.P3, 0)
     pins.digitalWritePin(DigitalPin.P4, 0)
@@ -7,6 +8,7 @@ KY040.OnPinPressed(DigitalPin.P0, function () {
 })
 KY040.onTurned(direction.clockwise, function () {
     Xcord = Xcord + 1
+    serial.writeValue("Xcord", Xcord)
     if (Xcord == 1) {
         pins.digitalWritePin(DigitalPin.P2, 1)
         pins.digitalWritePin(DigitalPin.P3, 0)
