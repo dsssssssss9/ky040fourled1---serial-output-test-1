@@ -1,3 +1,14 @@
+/**
+ * few small changes to Frank's original Code
+ * 
+ * ---------------------------------------------------------
+ * 
+ * Turn off all 4 LED in start Block
+ * 
+ * If xcord <0 set it to 0
+ * 
+ * if xcord > 4 then set it to 4
+ */
 KY040.OnPinPressed(DigitalPin.P0, function () {
     Xcord = 0
     serial.writeValue("Xcord", Xcord)
