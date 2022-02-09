@@ -1,5 +1,5 @@
 {
-    "name": "ky040FourLED1 - serial output test 1",
+    "name": "ky040FourLED1 - serial output test 1 No Xcord Bounding",
     "description": "",
     "dependencies": {
         "core": "*",
